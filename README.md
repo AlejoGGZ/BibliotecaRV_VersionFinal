@@ -1,2 +1,2 @@
-# BlbRV
+# BibliotecaRV Version "final"
 En este caso el codigo lo pude subir sin necesidad de que este todo en un zip, exceptuando la carpeta node_modules todos los demas archivos se subieron sin problema, ademas la carpeta uploads/pdfs esta vacia porque no me dejaba subirlo debido a que pesaba mucho. Esa carpeta "pdfs"la voy a dejar en un link a drive junto con la base de datos Exportada(biblioteca.sql). https://drive.google.com/drive/u/0/folders/1N6nEBxHrvJh5pzY7gh1QPecPu6EXH-Q6
