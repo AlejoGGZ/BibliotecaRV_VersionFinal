@@ -4,7 +4,6 @@ require 'config.php';
 
 $mensaje = '';
 
-// Agregar diario
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nuevo_diario'])) {
     $nuevo = trim($_POST['nuevo_diario']);
     if (!empty($nuevo)) {
@@ -19,11 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nuevo_diario'])) {
     }
 }
 
-// Eliminar diario
 if (isset($_GET['eliminar']) && is_numeric($_GET['eliminar'])) {
     $idEliminar = (int) $_GET['eliminar'];
 
-    // Confirmar que no hay registros en bibliotecat que usen este diario
     $check = $conn->prepare("SELECT COUNT(*) FROM bibliotecat WHERE diario_id = ?");
     $check->bind_param("i", $idEliminar);
     $check->execute();
@@ -45,7 +42,6 @@ if (isset($_GET['eliminar']) && is_numeric($_GET['eliminar'])) {
     }
 }
 
-// Obtener lista de diarios
 $diarios = $conn->query("SELECT * FROM diarios ORDER BY nombre ASC");
 ?>
 
