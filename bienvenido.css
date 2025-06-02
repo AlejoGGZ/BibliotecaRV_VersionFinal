@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/imagenes/fondobiblioteca.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tit{
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    position: relative;
+    height: 400px;
+    padding-left: 90px;
+    text-shadow:-1px -1px 1px #aaa,
+    0px 4px 1px rgba(0, 0, 0, 0.5),
+    4px 4px 5px rgba(0, 0, 0, 0.7),
+    0px 0px 7px rgba(0, 0, 0, 0.4);
+    
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color:rgba(6, 6, 6, 0.541);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-shadow:-1px -1px 1px #aaa,
+    0px 4px 1px rgba(0, 0, 0, 0.5),
+    4px 4px 5px rgba(0, 0, 0, 0.7),
+    0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+button:hover {
+    background: rgba(8, 226, 222, 0.685);
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
