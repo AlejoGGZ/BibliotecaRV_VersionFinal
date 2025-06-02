@@ -49,7 +49,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Obtener diarios
 $diarios = [];
 $result = $conn->query("SELECT id, nombre FROM diarios ORDER BY nombre ASC");
 if ($result && $result->num_rows > 0) {
@@ -61,7 +60,6 @@ $conn->close();
 ?>
 
 
-<!-- Parte visual -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
